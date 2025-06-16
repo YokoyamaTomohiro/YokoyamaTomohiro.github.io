@@ -6,14 +6,22 @@
         <meta charset="UTF-8">
         <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     </head>
-    <body background="image/2-3-16-8.jpg">
+    <body background="../product/image/2-3-16-8.jpg">
         <script type="text/javascript">
-            alert("ゲームの準備はよろしいですか？");
+            alert("ゲームの準備はよろしいですか？\nBGMが流れるため音量にご注意ください");
         </script>
         <canvas id="myCanvas" width=480 height=500></canvas>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
 
+        <audio id="BGM" src="sound/奈落への巡行.mp3" preload="auto"></audio>
+
+        <script>
+            window.onload = function() {
+            var audio = document.getElementById("BGM");
+            audio.play();
+        };
+        </script>
     </body>
 
 </html>
