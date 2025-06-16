@@ -218,6 +218,7 @@ function draw() {
 				if(!lives) {
 					//alert("GAME OVER");
 					document.location.reload();
+					alert("ゲームオーバー");
 				}
 			}
 		}
